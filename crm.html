@@ -11,6 +11,65 @@
 </head>
 <body>
 <main class="main">
+    <!--всплывающее окно-->
+    <div class="main__container overlay">
+        <h1 class="visually-hidden">Товар</h1>
+        <h2 class="article__title">Добавить товар</h2>
+        <hr class="hr1">
+        <form class="form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+            <fieldset class="container">
+                <div class="small__container">
+                    <label class="">Наименование
+                        <input class="article__input" type="text" name="name" required>
+                    </label>
+                    <label class="">Категория
+                        <input type="text" class="article__input" name="category" list="product"
+                               required>
+                        <datalist id="product">
+                            <option value="clothes">Одежда</option>
+                            <option value="product">Продукты</option>
+                            <option value="fresh">Фреш-бар</option>
+                        </datalist>
+                    </label>
+                    <label class="">Единицы измерения
+                        <select class="article__input" name="select" required>
+                            <option value="piece">шт</option>
+                            <option value="kilo">кг</option>
+                            <option value="liter">литры</option>
+                        </select>
+                    </label>
+                    <div class="container3">
+                        <label class="">Дисконт<br>
+                            <input class="article__input checkbox" type="checkbox" name="discount" value="discount">
+                        </label>
+                        <input class="article__input article__input_grey" type="password"
+                               name="card">
+                    </div>
+                </div>
+                <div class="small__container">
+                    <label>Описание
+                        <textarea class="article__input article__input_size_big" name="description"
+                                  rows="5"></textarea>
+                    </label>
+                    <label>Количество
+                        <input type="number" class="article__input " name="count" min="1"
+                               step="5" required>
+                    </label>
+                    <label>Цена
+                        <input type="number" class="article__input " name="price" min="50"
+                               max="1000" step="50"
+                               required>
+                    </label>
+                    <button class="btn small__container" type="submit">Добавить изображение</button>
+                </div>
+            </fieldset>
+            <button class="button " type="submit">Добавить товар</button>
+        </form>
+    </div>
+
+
+
+<!--таблица-->
     <div class="main__container1">
         <div class="title__container">
             <p class="title">CRM</p>
@@ -20,6 +79,7 @@
         <form action="https://jsonplaceholder.typicode.com/posts" method="post">
         <div class="table__container">
                 <div class="table__header">
+                    <div class="header__search">
                     <button class="table__button1" type="button">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 12L20 4V0H0V4L8 12V20L12 16V12Z" fill="#8B83BA"/>
@@ -27,6 +87,7 @@
                         Фильтр
                     </button>
                     <input class="search" type="text" value="" placeholder="Поиск по наименованию и категории">
+                    </div>
                     <button class="table__button2" type="submit">Добавить товар</button>
                 </div>
                 <table class="table">

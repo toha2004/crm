@@ -9,6 +9,15 @@
 }
 
 
+.overlay {
+    position: absolute;
+    z-index: 10;
+    left: 100px;
+    top: 200px;
+   /* display: none;*/
+}
+
+
 .article__title {
     font-size: 24px;
     font-weight: 700;
@@ -20,7 +29,7 @@
 }
 
 
-hr {
+.hr1 {
     width: 580px;
     size: 1px;
     color: #C6C2DE;
