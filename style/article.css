@@ -1,0 +1,138 @@
+
+.main__container {
+    width: 792px;
+    height: 613px;
+    margin: 0 auto;
+    padding: 32px 106px 39px;
+    background-color: #F2F0F9;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+}
+
+
+.article__title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 21px;
+}
+
+
+hr {
+    width: 580px;
+    size: 1px;
+    color: #C6C2DE;
+    margin-bottom: 21px;
+}
+
+
+fieldset {
+    width: 580px;
+    padding: 28px 28px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    margin-bottom: 32px;
+}
+
+
+.container {
+    max-width: 580px;
+    height: 403px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.small__container {
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+
+.container3 {
+    width: 250px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+label {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #6E6893;
+
+}
+
+
+.article__input {
+    width: 250px;
+    height: 40px;
+    background-color: #F4F2FF;
+    border-radius: 6px;
+
+}
+
+
+.checkbox {
+    width: 40px;
+    height: 40px;
+    background-color: #F4F2FF;
+}
+
+
+.article__input_grey {
+    width: 200px;
+    background-color: #EEEEEE;
+    margin-top: 12px;
+}
+
+
+.article__input_size_big {
+    width: 250px;
+    height: 112px;
+}
+
+
+.btn {
+    width: 250px;
+    height: 39px;
+    background: #6D5BD0;
+    border-radius: 6px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    padding: 11px 28px;
+    text-transform: uppercase;
+}
+
+.button {
+    width: 250px;
+    height: 39px;
+    float: right;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    background-color: #6D5BD0;
+    color: #FFFFFF;
+    border-radius: 6px;
+    margin-right: 29px;
+}
+
+
+.button:hover {
+    text-decoration: underline;
+}
